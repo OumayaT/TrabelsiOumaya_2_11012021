@@ -1,0 +1,646 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('webfont/raleway-regular-webfont.woff2') format('woff2'),
+         url('webfont/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.bloc_page
+{
+    font-family: 'ralewayregular';
+    color: black;
+   
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+   
+}
+
+.logo img
+{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    border: none;
+    
+}
+.menu
+{
+    display: flex;
+    margin: 20px;
+}
+.ancre
+{
+    display: flex;
+}
+.ancre a
+{
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+
+}
+.inscription 
+{
+    margin: 20px;
+}
+.inscription a
+{
+    margin: 20px;
+    color: #0065fc;;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.ancre a:active
+    {   display: inline-block;
+        padding: 30px 0 0 0;
+        border-top: 3px #0065fc solid;
+    }
+
+
+            /*responsive tablette */
+
+@media all and (max-width: 1024px)
+{
+    .bloc_page
+    {
+        width: auto;
+    }
+    
+}
+
+
+                /*responsive mobile */
+@media all and (max-width:768px)
+{
+    .bloc_page
+    {
+        width: auto;
+    }
+    
+    
+  .menu
+  {
+      flex-direction: column-reverse;
+      width: 700px;
+      margin: 25px;
+  }
+
+  .inscription
+  {
+      text-align: right;
+      color: #0065fc;
+      
+  }
+   
+  
+
+  .ancre
+  {
+    justify-content: space-around;
+    
+
+  }
+
+
+  
+  .ancre a:active
+  {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+    padding: 0 0 30px 0;
+    width: 200px;
+    text-align: center;
+  }    
+  
+}
+        /* section trouverz un hébergement */
+.titre_principal
+{
+    font-size: large;
+    font-weight: bold;
+     margin: 5px;
+}
+
+.sous_titre
+{
+    font-size: small;
+     margin: 5px;
+}
+
+.barre1
+{
+    display: flex;
+     position: absolute;
+}
+
+.ville
+{
+    width: 350px;
+    height: 40px;
+}
+            
+.bouton
+{
+    background-color: #0065fc;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+}
+
+.fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 10px 0 0 10px;  
+     padding: 10px;
+}
+
+.barre2
+{
+    display: flex;
+     margin: 20px
+}
+
+.loupe
+{
+    background-color: #0065fc;
+    border: none;
+    padding: 0 10px 0 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: -20px;
+                
+}
+            
+@media all and (max-width: 768px)
+{
+    .barre1
+    {
+        visibility: hidden;
+    }
+}
+            
+
+            /*filtres */
+.bloc_filtre
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 70%;
+}
+            
+.bouton_filtre
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+            
+.fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave
+{
+    background-color: #DEEBFF;
+    color: #0065fc;
+    border-radius: 60px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: -1px;
+                
+}
+
+button
+{
+    background: none;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: #F2F2F2;
+    padding-left: 0;
+    border-left: none;
+    width:max-content
+}
+            
+.Filtres
+{
+    font-weight: bold;
+    margin-right:20px;
+}
+            
+.info 
+{
+    font-size: small;
+}
+            
+.fa-info
+{
+    border: 1px solid #dbdbdb ;
+    color: #0065fc;
+    padding: 1px 5px 1px 5px;
+    border-radius: 50px; 
+}
+            
+@media all and (max-width: 1024px)
+{
+    .bouton_filtre
+    {
+        flex-wrap: wrap;
+        margin: 50px;
+     }
+}
+
+/*section résultat de la recherche */
+.conteneur
+{
+    display: flex;
+}
+
+
+.affichage
+{
+    margin-right: 20px;
+    flex:3;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    
+}
+
+.titre_h
+{
+    padding-left: 50px;
+    font-size:large;
+    font-weight: bold;
+    margin-top: 30px;
+ 
+}
+
+.hebergement_dispo
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 200px);
+    padding: 20px;
+    grid-column-gap: 50px;
+    grid-row-gap: 80px; 
+    border-radius: 30px;
+    margin: 20px; 
+}
+
+img 
+{
+    width: 250px;
+    border: 5px solid white ;
+    border-radius: 10px 10px 0 0;
+    height: 150px;
+}
+
+.logement1, .logement2, .logement3, .logement4, .logement5, .logement6
+{
+    background-color: white;
+    width: max-content;
+    height: max-content;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 10px; 
+}
+            
+.nom, .prix, .etoiles
+{
+    text-align: left;
+    margin: 2px;
+    padding: 2px;
+    text-decoration: none;
+}
+            
+.nom
+{
+    font-weight: bold;
+}
+                        
+.prix
+{
+    font-size: small;
+}
+            
+a
+{
+    text-decoration: none;
+    color: black;
+}
+            
+.etoiles
+{
+    color: #0065fc;
+    line-height: 1px;
+    text-align: left;
+}
+            
+span
+{
+    color: #F2F2F2
+}
+
+.hebergement_dispo a
+{
+    font-weight: bold;
+}
+
+
+            
+             /* aside */
+aside
+{
+    background-color: #F2F2F2;
+    flex: 1.2;
+    position: relative;
+    border-radius: 20px;
+     
+}
+ 
+.titre_aside
+{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    width: 90%;
+    font-size:large;
+    margin: 20px;   
+}
+ 
+.titre_pop
+{
+    font-size:large;
+    font-weight: bold;
+}
+.populaire1, .populaire2, .populaire3
+{
+    background-color: white;
+    width: 90%;
+    height: 150px;
+    padding-right: 20px;
+    margin: 10px 10px 40px 10px;
+    border-radius: 10px;
+}
+  
+.populaire1 img, .populaire2 img,.populaire3 img 
+{
+    width: 130px;
+    height: 140px;
+    float: left; 
+    border-radius: 10px 0 0 10px;
+}
+  
+.nom_pop
+{
+    font-weight: bold;
+    padding-top: 15px;
+}
+  
+.prix_pop
+{
+    font-size: small;
+}
+  
+@media all and (max-width:1024px)
+{
+    .bloc_page
+    {
+        width: auto;
+    }
+
+    .conteneur
+    {
+        flex-direction: column;  
+    }
+    aside 
+    {
+        background-color: #DEEBFF;
+        margin: 20px 20px 0 0;
+    } 
+  
+    .hebergement_dispo
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 200px);
+        border-radius: 30px;
+        grid-row-gap: 100px;
+        width: auto;
+
+    }
+   
+  
+    .logement1, .logement2, .logement3, .logement4, .logement5, .logement6
+    {
+        width: 300px;
+        height: 250px;   
+        box-shadow: 6px 6px 6px #F2F2F2;
+        
+    }
+  }   
+
+
+@media all and (max-width:768px)
+{
+    .conteneur
+    {
+        flex-direction: column-reverse;  
+    }
+    .hebergement_dispo
+    {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        margin: 0;
+    }    
+          
+    .logement1, .logement2, .logement3, .logement4, .logement5, .logement6
+    {  
+        width: auto;
+        height: 250px; 
+           
+    }
+    img 
+    {
+        width: 400px; 
+        border: 5px solid white ;
+        border-radius: 10px 10px 0 0;
+        height: 150px;
+    }
+
+    aside 
+    {
+        border-radius: 0;
+        background-color: #F2F2F2;
+
+    }
+
+    .affichage 
+    {
+        background-color: white;
+    }
+        
+}      
+
+
+        /*section activités */
+
+.conteneur_2
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-column-gap: 50px;
+    grid-row-gap: 40px; 
+    margin: 20px;
+}
+
+
+.act1
+{
+  
+    background-image: url(images/activites/4_small/vieux_port.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #F2F2F2;
+    grid-area: 1 / 1 / 3 / 2;
+    
+}
+
+
+.act2
+{
+    
+    background-image: url(images/activites/4_small/fort_pomègues.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #F2F2F2;
+ 
+}
+
+.act3
+{
+   
+    background-image: url(images/activites/4_small/iles_frioul.jpg);
+    grid-area: 2 / 2 / 3 / 3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #F2F2F2;
+  
+}
+
+.act4
+{
+   
+    background-image: url(images/activites/4_small/parc_calanques.jpg);
+    grid-area: 1 / 3 / 3 / 4;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #F2F2F2;
+   
+}
+
+.act5
+{
+   
+    background-image: url(images/activites/4_small/notre_dame_de_la_garde.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #F2F2F2;
+}
+
+.act6
+{
+   
+    background-image: url(images/activites/4_small/parc_longchamp.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #F2F2F2;
+  
+}
+
+.lieu
+{
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 10px 10px 5px ;
+    margin: 0;
+    font-weight: bold;
+}
+
+@media all and (max-width: 1024px)
+{
+    .conteneur_2
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 200px);
+        grid-column-gap: 50px;
+        grid-row-gap: 40px; 
+        margin: 20px;
+       
+    }
+
+    .act1
+    {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .act2
+    {
+        grid-column: 3/5;
+    }
+
+    .act3
+    {
+        grid-column: 3/5;
+    }
+
+    .act4
+    {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    .act5
+    {
+        grid-column: 3/5;
+        
+    }
+
+    .act6
+    {
+        grid-column: 3/5;
+    }
+
+   
+}
