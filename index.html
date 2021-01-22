@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
@@ -24,32 +24,75 @@
             </header>
 
                                <!--Section recherche-->
-            <section class="touvez_hébergement">
-                <div class="titres">
-                    <h2 class="titre_principal">Trouvez votre hébergement pour des vacances de rêve</h2>
-                    <h3 class="sous_titre">En plein centre ville ou en pleine nature</h3>
-                </div>
-                <div class="conteneur_barre">
-                    <form class="barre1">
-                        <i class="fas fa-map-marker-alt"></i><input type="text" class="ville" placeholder="Marseille, France">
-                        <input type="button" class="bouton" value="Rechercher">
-                    </form>
-                    <form class="barre2">
-                        <i class="fas fa-map-marker-alt"></i><input type="text" class="ville" placeholder="Marseille, France">
-                        <button class="loupe"><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="bloc_filtre">
-                    <p class="Filtres">Filtres</p>
-                    <div class=bouton_filtre>
-                        <div class="éco"><button><i class="fas fa-money-bill-wave"></i>&nbsp; &Eacute;conomique</button></div>
-                        <div class="famil"><button><i class="fas fa-child"></i>&nbsp; Familial</button></div>
-                        <div class="rom"><button><i class="fas fa-heart"></i>&nbsp; Romantique</button></div>
-                        <div class="ani"><button><i class="fas fa-dog"></i>&nbsp; Animeaux autorisés</button></div>
+            <section class="touvez_hebergement">
+                <div class="conteneur">
+                    <div class="titres">
+                        <h2 class="titre_principal">Trouvez votre hébergement pour des vacances de rêve</h2>
+                        <h3 class="sous_titre">En plein centre ville ou en pleine nature</h3>
+                    </div>
+                    <div class="conteneur_barre">
+                        <form class="barre1">
+                            <div class="icon_location">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <input type="text" class="ville" placeholder="Marseille, France">
+                            <input type="button" class="bouton" value="Rechercher">
+                        </form>
+                        <form class="barre2">
+                            <div class="icon_location">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <input type="text" class="ville" placeholder="Marseille, France">
+                            <button class="loupe"><i class="fas fa-search"></i></button>
+                        </form>
                     </div>
                     
+                    <div class="conteneur_filtre">
+                        <div class="filtres">
+                            <p>Filtres</p>
+                        </div>    
+                        <div class="bloc_filtres">
+                            <div class="box_filtre">
+                                <button class="bt">
+                                    <span class="icon">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                    </span>                                  
+                                    &Eacute;conomique                    
+                                </button>
+                            </div>
+                            <div class="box_filtre">
+                                <button class="bt">
+                                    <span class="icon">
+                                        <i class="fas fa-child"></i>
+                                    </span>
+                                    Familial
+                                </button>
+                            </div>
+                            <div class="box_filtre">
+                                <button class="bt">
+                                    <span class="icon">
+                                        <i class="fas fa-heart"></i>
+                                    </span>
+                                    Romantique
+                                </button>
+                            </div>
+                            <div class="box_filtre">
+                                <button class="bt">
+                                    <span class="icon">
+                                        <i class="fas fa-dog"></i>
+                                    </span>
+                                    Animeaux autorisés
+                                </button>
+                            </div>    
+                        </div>
+                    </div>  
+                    <div class="info">
+                        <div class="icon_info">
+                            <i class="fas fa-info"></i>
+                        </div>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
                 </div>
-                <p class="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p> 
             </section>
 
             <!--section résultat recherche hébergement-->
