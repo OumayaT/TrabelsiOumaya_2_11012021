@@ -341,7 +341,7 @@ a
 
 .prix, .nom, .etoiles
 {
-    margin:5px;
+    margin:5px 10px;
     line-height: 1;
 }
 
@@ -373,6 +373,7 @@ span
     color: black;
     font-weight: bold;
     font-size: large;
+    padding-left: 10px;
 }
 
 
@@ -399,9 +400,6 @@ aside
     height: 150px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
-
-   
-  
 }
 
 .pop
@@ -490,7 +488,6 @@ aside
     {
         margin: 0;
         padding: 0;
-     
         background-color: white;
     }
 
@@ -524,10 +521,6 @@ aside
        position: absolute;
        bottom: 0;
     }
-
-
-
-   
 }
 
 /*section activités */
