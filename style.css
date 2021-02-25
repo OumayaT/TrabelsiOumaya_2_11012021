@@ -391,8 +391,6 @@ aside
     display: flex;
     align-items:baseline;
     justify-content: space-between;
-   
-   
 }
 
 .pop img
@@ -401,6 +399,9 @@ aside
     height: 150px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
+
+   
+  
 }
 
 .pop
@@ -412,6 +413,7 @@ aside
     box-shadow: 5px 5px white;
     margin-bottom: 30px;
 }
+
 
 
 .nom_pop
@@ -454,7 +456,6 @@ aside
 
     .affichage
     {
-     
         flex:2;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -488,21 +489,20 @@ aside
     .affichage 
     {
         margin: 0;
-        padding: 10px;
+        padding: 0;
+     
+        background-color: white;
     }
-
-   
 
     .logement img 
     {
         height: 150px;
     }
 
-    .affichage 
+    .logement 
     {
-        background-color: white;
+        height: fit-content;
     }
-
 
     aside 
     {
@@ -659,8 +659,6 @@ aside
     {
         display: flex;
         flex-direction: column;
-        align-items: center;
- 
     }
 
     .conteneur_2 img 
