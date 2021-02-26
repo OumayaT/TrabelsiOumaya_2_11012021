@@ -340,9 +340,10 @@ button
     border-radius: 20px;
     background-color: white;
     box-shadow: 6px 6px 6px #F2F2F2;
+   
 }
 
-a
+a 
 {
     text-decoration: none;
     color: black;
@@ -530,6 +531,7 @@ aside
        position: absolute;
        bottom: 0;
     }
+
 }
 
 /*section activités */
