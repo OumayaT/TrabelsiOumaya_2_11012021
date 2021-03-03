@@ -51,7 +51,7 @@ header
 {
     color: #0065fc;;
     text-decoration: none;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .ancre a:hover
@@ -204,7 +204,7 @@ button
 {
     font-size: large;
     font-weight: bold;
-    padding: 10px;
+    padding: 20px;
 }
 
 .conteneur_filtre
@@ -256,7 +256,7 @@ button
 {
     display: flex;
     align-items: baseline;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .icon_info
@@ -302,6 +302,7 @@ button
 .conteneur_1
 {
     display: flex;
+    padding: 10px;
 }
 
 .affichage
@@ -487,6 +488,7 @@ aside
     {
         margin: 20px 0;
     }
+
 }
 
 @media all and (max-width:768px)
@@ -505,6 +507,11 @@ aside
         background-color: white;
     }
 
+    .affichage h3 
+    {
+        padding-left: 10px;
+    }
+
     .logement img 
     {
         height: 150px;
@@ -519,6 +526,11 @@ aside
     {
         margin: 0;
         padding: 10px;
+    }
+
+    .pop 
+    {
+        margin: 30px 0;
     }
 
     .details_lp
@@ -542,7 +554,7 @@ aside
 
 .titre_activite
 {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .conteneur_2
@@ -552,6 +564,7 @@ aside
     grid-template-rows: repeat(2, 200px);
     grid-column-gap: 50px;
     grid-row-gap: 40px; 
+    padding: 10px;
 }
 
 .conteneur_2 img
